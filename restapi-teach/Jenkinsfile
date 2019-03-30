@@ -17,8 +17,8 @@ pipeline {
         stage('QA_Test') {
             steps {
                 echo '执行自动化部署...'
-                bat 'python E:/mySoftware/softwatest/restapi-teach/autodeploy.py'
-                echo '执行自动化测试...'
+                bat 'echo 执行自动化测试...'
+               
 
                 dir ('E:/mySoftware/gittest/restapi-autotest') {
                     bat 'robot --pythonpath . --name build_%BUILD_NUMBER% -L debug lesson2'
