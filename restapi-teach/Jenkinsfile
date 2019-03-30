@@ -20,8 +20,8 @@ pipeline {
                 bat 'echo 执行自动化测试...'
                
 
-                dir ('E:/mySoftware/gittest/restapi-autotest') {
-                    bat 'robot --pythonpath . --name build_%BUILD_NUMBER% -L debug lesson2'
+               {
+                    bat 'echo 自动化测试'
                 }
 
             }
